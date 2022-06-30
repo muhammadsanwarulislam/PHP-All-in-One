@@ -20,7 +20,8 @@
 
 ## Object
 
-**What is an Object** If you look at the world around you, you’ll find many examples of tangible objects: lamps, phones, computers, and cars. Also, you can find intangible objects such as bank accounts and transactions.
+**What is an Object** 
+If you look at the world around you, you’ll find many examples of tangible objects: lamps, phones, computers, and cars. Also, you can find intangible objects such as bank accounts and transactions.
 
 All of these objects share the two common key characteristics:
 1. State
