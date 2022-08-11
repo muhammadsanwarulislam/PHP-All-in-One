@@ -1,5 +1,8 @@
 <?php
 
+/* The uasort() function sorts the elements of an associative array with a user-defined 
+comparison function and maintains the index association.*/
+
 $countries = [
     'China' => ['gdp' => 12.238 , 'gdp_growth' => 6.9],
     'Germany' => ['gdp' => 3.693 , 'gdp_growth' => 2.22 ],
