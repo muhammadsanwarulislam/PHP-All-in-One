@@ -15,7 +15,6 @@ function odd_occurrence($arr)
         # Xor (exclusive or)
         # Bits that are set in $a or $b but not both are set.
         $result = $result ^ $value;
-        echo $result . ' ';
     }
     return $result;
 }
