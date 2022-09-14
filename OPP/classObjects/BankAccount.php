@@ -1,6 +1,14 @@
 <!-- Let's create a class to check blance is available or not provide bank account -->
 
 <?php
+
+/* 
+    -> Objects have states and behaviors.
+    > A class is a blueprint for creating objects.
+    -> Properties represent the object’s state, and methods represent the object’s behavior. Properties and methods have visibility.
+    -> Use the new keyword to create an object from a class.
+    -> The $this variable references the current object of the class.
+*/
 class BankAccount {
     public $accountNumber;
     public $blance;
