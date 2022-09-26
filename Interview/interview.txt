@@ -13,5 +13,21 @@ There is a list of interview questions which i have been facing till now.
             -> 404 (Not Found)
         ->5xx server errors
 
-    2. Difference Between PUT and PATCH Request
-    
+    2. Difference between PUT and PATCH Request
+        -> put request can be use in order update an existing resource or put request can use create a resource which is call upsert
+        -> whenever we send put request we have to send whole the body resources in the request payload
+
+        -> patch request basically just change few attributes existing resource
+
+    3. Difference between print and echo
+        ->echo has no return value, echo can take multiple parameters and echo is marginally faster than print
+
+        ->print has return value of 1 so it ca be used in expressions
+
+--------------------------------------------------------OBJECT ORIENTED PROGRAMMING--------------------------------------------------------------------------------------
+
+    4. Difference between abstract class and interface
+        ->interface can contain only abstract method
+        ->interface can not contain constructor. it will return such kind of error "Fatal error: Interface function A::__construct() cannot contain body"
+        ->interface all function must be public. if the method protected then it will return such kind of error "Fatal error: Access type for interface method A::demo() must be omitted"
+        ->interface can support multiple inheritence
