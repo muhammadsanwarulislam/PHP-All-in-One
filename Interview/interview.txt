@@ -31,3 +31,6 @@ There is a list of interview questions which i have been facing till now.
         ->interface can not contain constructor. it will return such kind of error "Fatal error: Interface function A::__construct() cannot contain body"
         ->interface all function must be public. if the method protected then it will return such kind of error "Fatal error: Access type for interface method A::demo() must be omitted"
         ->interface can support multiple inheritence
+
+    5. What is encapsulation?
+        -> hiding the data and implementation details within a class
