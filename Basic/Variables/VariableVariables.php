@@ -1,4 +1,7 @@
 <?php
+/* Variable variables */
+
+
 $a = "hello";
 $$a = "variabls";
 
