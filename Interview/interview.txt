@@ -30,6 +30,8 @@ There is a list of interview questions which i have been facing till now.
 
     5. What is Variable Variables?
         -> A variable variable takes the value of a variable and treats that as the name of a variable.
+    6. PHP data type
+        -> PHP has eight primitive data types and those are booleans, integer, float, string, array, object, resource and null
 
 --------------------------------------------------------OBJECT ORIENTED PROGRAMMING--------------------------------------------------------------------------------------
 
