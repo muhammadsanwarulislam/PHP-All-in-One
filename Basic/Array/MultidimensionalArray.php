@@ -1,23 +1,23 @@
 <?php
+//Multidimensional
 
-$tasks = [
-    ['Learn PHP programming', 2],
-    ['Practice PHP', 2],
-    ['Work', 8],
-    ['Do exercise', 1],
-    ['Test case', ','],
-];
-$tasks[] = ['Build something matter in PHP', 2];
-// unset($tasks[4]);
-// array_splice($tasks[2], 2, 1);
+/*
+    A multidimensional array contains multiple arrays in it. In other words, it is
+    an array of array(s).
+*/
 
-foreach($tasks as $task)
+$players = [];
+$players[] = ["Name" => "Ronaldo", "Age" => 31, "Country" => "Portugal", "Team" => "Real Madrid"];
+$players[] = ["Name" => "Messi", "Age" => 27, "Country" => "Argentina", "Team" => "Barcelona"];
+$players[] = ["Name" => "Neymar", "Age" => 24, "Country" => "Brazil", "Team" => "Barcelona"];
+$players[] = ["Name" => "Rooney", "Age" => 30, "Country" => "England", "Team" => "Man United"];
+
+foreach($players as $index => $playerInfo)
 {
-    foreach($task as $task_details)
+    echo "Info of player #". ($index +1) ."\n";
+    foreach($playerInfo as $key => $value)
     {
-        echo "<pre>";
-        print_r($task_details);
-        echo "</pre>";
+        echo $key . ":". $value."\n";
     }
+    echo "\n";
 }
-
