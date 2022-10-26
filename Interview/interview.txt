@@ -30,8 +30,15 @@ There is a list of interview questions which i have been facing till now.
 
     5. What is Variable Variables?
         -> A variable variable takes the value of a variable and treats that as the name of a variable.
+
     6. PHP data type
         -> PHP has eight primitive data types and those are booleans, integer, float, string, array, object, resource and null
+
+    7. What are the difference Match expression vs switch case?
+        -> match is an expression, while switch is statement
+        -> match uses strict comparison, while switch uses loose
+        -> match allows only single-line expression, while switch allows block of statements
+        -> if we don't set default in match it will throw error "Uncaught UnhandledMatchError"
 
 --------------------------------------------------------OBJECT ORIENTED PROGRAMMING--------------------------------------------------------------------------------------
 
