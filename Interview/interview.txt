@@ -40,6 +40,9 @@ There is a list of interview questions which i have been facing till now.
         -> match allows only single-line expression, while switch allows block of statements
         -> if we don't set default in match it will throw error "Uncaught UnhandledMatchError"
 
+    8. Strict Types in PHP
+        -> To enable the strict mode, a single declare directive must be placed at the top of the file
+
 --------------------------------------------------------OBJECT ORIENTED PROGRAMMING--------------------------------------------------------------------------------------
 
     1. Difference between abstract class and interface
