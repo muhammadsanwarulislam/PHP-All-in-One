@@ -43,7 +43,7 @@ There is a list of interview questions which i have been facing till now.
     8. Strict Types in PHP
         -> To enable the strict mode, a single declare directive must be placed at the top of the file
 
---------------------------------------------------------OBJECT ORIENTED PROGRAMMING--------------------------------------------------------------------------------------
+    ---------OBJECT ORIENTEDPROGRAMMING----------------------------------------------------
 
     1. Difference between abstract class and interface
         ->interface can contain only abstract method
