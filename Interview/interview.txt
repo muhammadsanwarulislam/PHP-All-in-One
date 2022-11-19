@@ -53,3 +53,7 @@ There is a list of interview questions which i have been facing till now.
 
     2. What is encapsulation?
         -> hiding the data and implementation details within a class
+
+    3. What is the difference between encapsulation and abstration?
+        ->Eencapsulation hiding internal state of information.
+        -Aabstration hide acctual implementation of the work. 
