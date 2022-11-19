@@ -43,6 +43,11 @@ There is a list of interview questions which i have been facing till now.
     8. Strict Types in PHP
         -> To enable the strict mode, a single declare directive must be placed at the top of the file
 
+    9. What is require / require_once / include / include_once?
+        -> include don't stop to the execution while file not found.
+        -> require stop the execution while file not found.
+        -> require_once or include_once same concept required or include file once count.
+
     ---------OBJECT ORIENTEDPROGRAMMING----------------------------------------------------
 
     1. Difference between abstract class and interface
@@ -53,3 +58,7 @@ There is a list of interview questions which i have been facing till now.
 
     2. What is encapsulation?
         -> hiding the data and implementation details within a class
+
+    3. What is the difference between encapsulation and abstration?
+        ->Eencapsulation hiding internal state of information.
+        -Aabstration hide acctual implementation of the work. 
