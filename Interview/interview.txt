@@ -53,12 +53,15 @@ There is a list of interview questions which i have been facing till now.
     1. Difference between abstract class and interface
         ->interface can contain only abstract method
         ->interface can not contain constructor. it will return such kind of error "Fatal error: Interface function A::__construct() cannot contain body"
-        ->interface all function must be public. if the method protected then it will return such kind of error "Fatal error: Access type for interface method A::demo() must be omitted"
+        ->interface all function must be public. if the method protected then it will return such kind of error "Fatal error: Access type for interface method                    A::demo() must be omitted"
         ->interface can support multiple inheritence
 
     2. What is encapsulation?
         -> hiding the data and implementation details within a class
 
-    3. What is the difference between encapsulation and abstration?
+    3. What is the difference between encapsulation and abstraction?
         ->Eencapsulation hiding internal state of information.
-        -Aabstration hide acctual implementation of the work. 
+        ->Aabstraction hide acctual implementation of the work.
+        
+     4. What is namespaces?
+        ->Namespace is one kind of virtual directory of the classes
