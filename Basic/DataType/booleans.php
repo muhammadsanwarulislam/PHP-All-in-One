@@ -1,5 +1,5 @@
 <?php
-/*BLLEANS */
+/*BOOEANS */
 
 /*
     integers 0, -0  = false
