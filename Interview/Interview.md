@@ -65,10 +65,10 @@ What is require / require_once / include / include_once?
 
 ## Q200
 Difference between abstract class and interface
- * interface can contain only abstract method
- * interface can not contain constructor. it will return such kind of error "Fatal error: Interface function A::__construct() cannot contain body"
- * interface all function must be public. if the method protected then it will return such kind of error "Fatal error: Access type for interface method  
- * interface can support multiple inheritence
+ * Interface can contain only abstract method
+ * Interface can not contain constructor. it will return such kind of error "Fatal error: Interface function A::__construct() cannot contain body"
+ * Interface all function must be public. if the method protected then it will return such kind of error "Fatal error: Access type for interface method  
+ * Interface can support multiple inheritence
 
 ## Q201
 What is encapsulation
@@ -81,4 +81,4 @@ What is encapsulation
   
   ## Q203
   What is namespaces
-   * Namespace is one kind of virtual directory of the classes
+   * **Namespace** is one kind of virtual directory of the classes
