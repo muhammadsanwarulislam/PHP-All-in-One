@@ -1,7 +1,7 @@
 | #  |                                                           Questions                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
 | Step: 1    | [HTTP status code](#q1)
-| Step: 2    | [Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)
+| Step: 2    | [Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)
 
 
 ## Q1
@@ -51,3 +51,13 @@ PHP has eight primitive data types and those,
  * object
  * resource
  * null
+
+## Q6
+What is Variable Variables?
+A variable variable takes the value of a variable and treats that as the name of a variable.
+
+## Q7
+What is require / require_once / include / include_once?
+ * include don't stop to the execution while file not found.
+ * require stop the execution while file not found.
+ * require_once or include_once same concept required or include file once count.
