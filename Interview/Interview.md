@@ -2,6 +2,7 @@
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
 | Step: 1    | [HTTP status code](#q1)
 | Step: 2    | [Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)
+| Step: 3    | [Difference between abstract class and interface](#q200)<br>[What is encapsulation](#q201)<br>[What is the difference between encapsulation and abstraction](#q202)<br>[What is namespaces](#q203)
 
 
 ## Q1
@@ -61,3 +62,23 @@ What is require / require_once / include / include_once?
  * include don't stop to the execution while file not found.
  * require stop the execution while file not found.
  * require_once or include_once same concept required or include file once count.
+
+## Q200
+Difference between abstract class and interface
+ * interface can contain only abstract method
+ * interface can not contain constructor. it will return such kind of error "Fatal error: Interface function A::__construct() cannot contain body"
+ * interface all function must be public. if the method protected then it will return such kind of error "Fatal error: Access type for interface method  
+ * interface can support multiple inheritence
+
+## Q201
+What is encapsulation
+ * hiding the data and implementation details within a class
+ 
+ ## Q202
+ What is the difference between encapsulation and abstraction
+  * **Eencapsulation** hiding internal state of information.
+  * **Aabstraction** hide acctual implementation of the work.
+  
+  ## Q203
+  What is namespaces
+   * Namespace is one kind of virtual directory of the classes
