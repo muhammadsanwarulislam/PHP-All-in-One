@@ -1,7 +1,7 @@
 | #  |                                                           Questions                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
 | Step: 1    | [HTTP status code](#q1)
-| Step: 2    | [Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What are the difference match expression vs switch case](#q4)
+| Step: 2    | [Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)
 
 
 ## Q1
@@ -39,3 +39,15 @@ What are the difference match expression vs switch case
  * Match uses strict comparison, while switch uses loose.
  * Match allows only single-line expression, while switch allows block of statements.
  * If we don't set default in match it will throw error "Uncaught UnhandledMatchError".
+
+## Q5
+
+PHP has eight primitive data types and those,
+ * booleans
+ * integer
+ * float
+ * string
+ * array
+ * object
+ * resource
+ * null
