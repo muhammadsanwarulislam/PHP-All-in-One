@@ -56,6 +56,15 @@ PHP has eight primitive data types and those,
 ## Q6
 What is Variable Variables?
 A variable variable takes the value of a variable and treats that as the name of a variable.
+```
+$Hello = "Welcome to my page";
+$var = "Hello";
+echo $var ." ". $$var;
+```
+The output will be
+```
+Hello Welcome to my page
+```
 
 ## Q7
 What is require / require_once / include / include_once?
