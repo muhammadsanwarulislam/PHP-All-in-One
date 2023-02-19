@@ -1,0 +1,2 @@
+## Encapsulation ##
+**Encapsulation** is a concept in object-oriented programming where data and methods are bundled together within a class to prevent direct access to the class's internal state. This is achieved by declaring the class's data members as private or protected, and providing public methods to access and modify them.
