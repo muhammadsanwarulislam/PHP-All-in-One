@@ -1,7 +1,7 @@
 | #  |                                                           Questions                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
 | Step: 1    | [HTTP status code](#q1)
-| Step: 2    | [Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)<br>[PHP string quotation differences](#q8)
+| Step: 2    | [Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)<br>[PHP string quotation differences](#q8)<br>[PHP Global Variables - Superglobals](#q9)
 | Step: 3    | [Difference between abstract class and interface](#q200)<br>[What is encapsulation](#q201)<br>[What is the difference between encapsulation and abstraction](#q202)<br>[What is namespaces](#q203)
 
 
@@ -86,6 +86,19 @@ echo "Hello, $name!";  // output: Hello, John!
 
 ```
 In general, you should use single quotation marks for strings that do not contain variables or escape sequences, as they are slightly faster and easier to read. For strings that do contain variables or escape sequences, use double quotation marks.
+
+## Q9
+Some predefined variables in PHP are "superglobals", which means that they are always accessible, regardless of scope - and you can access them from any function, class or file without having to do anything special.
+ * $GLOBALS
+ * $_SERVER
+ * $_REQUEST
+ * $_POST
+ * $_GET
+ * $_FILE
+ * $_ENV
+ * $_SESSION
+ * $_COOKIE
+ 
 
 ## Q200
 Difference between abstract class and interface
