@@ -6,6 +6,7 @@
    * In inheritance we can't access private property from extends class.
    * We can't decrease visibility of property.
    * We can't change the method signature.
+   * In ```construct()``` method signature can be modify.
    
     
     
