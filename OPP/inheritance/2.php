@@ -1,12 +1,16 @@
 <?php
 
 class ToasterPro extends Toaster{
-    public int $size = 4;
+    public function __construct()
+    {
+        parent::__construct();
+        $this->size = 4;
+    }
 
-    public function tost()
+    public function tostBagel()
     {
         foreach($this->slices as $key => $slice) {
-            echo ($key + 1).''.$slice.PHP_EOL;
+            echo ($key + 1).' Tosting Bagel '.$slice.PHP_EOL;
         }
     }
 }

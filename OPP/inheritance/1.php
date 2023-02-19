@@ -4,9 +4,14 @@ declare(strict_types = 1);
 include_once './2.php';
 
 class Toaster {
-    public array $slices = [];
-    public int $size = 2;
+    public array $slices;
+    public int $size;
 
+    public function __construct()
+    {
+        $this->slices = [];
+        $this->size = 2;
+    }
     public function addSlice(string $slice): void
     {
         if(count($this->slices) < $this->size) {
@@ -34,5 +39,7 @@ $objToasterPro = new ToasterPro();
 $objToasterPro->addSlice('Bread 1');
 $objToasterPro->addSlice('Bread 2');
 $objToasterPro->addSlice('Bread 3');
+$objToasterPro->addSlice('Bread 4');
+$objToasterPro->addSlice('Bread 5');
 
-$objToasterPro->toast();
+$objToasterPro->tostBagel();
