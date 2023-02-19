@@ -7,6 +7,6 @@
    * We can't decrease visibility of property.
    * We can't change the method signature.
    * In ```construct()``` method signature can be modify.
-   * In inheritance we can't extends final class like if we define ```final class Toaster```, we can't extends child class.
+   * In inheritance we can't extends final class like if we define ```final class Toaster```, we can't extends child class and method will be apply same rule.
     
     
