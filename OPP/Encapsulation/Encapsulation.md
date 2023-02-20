@@ -20,4 +20,13 @@ class Transcation {
 $objOfTranscation = new Transcation(30);
 $objOfTranscation->processing(); 
 ```
-In this example, we have a ```Transcation``` class with ```$amount``` property which is private and we have two methods ```__construct``` and ```processing```. The ```__construct``` set the amount whatever we pass the amount when we create a object the ```Transcation```class and ```processing``` method just echo the amount.
+In this example, we have a ```Transcation``` class with ```$amount``` property which is private and we have two methods ```__construct``` and ```processing```. The ```__construct``` set the amount whatever we pass the amount when we create a object the ```Transcation```class and ```processing``` method just echo the amount. In this example we can change ```Transcation``` internal state outside of the class but if we define ```$amount``` property as like ```public int $amount``` then we can modify the ```Transcation``` class state. We can modify the state like this 
+``` 
+$objOfTranscation = new Transcation(30);
+$objOfTranscation->amount = 100;
+$objOfTranscation->processing(); 
+````
+Output will be:
+```
+The transcation 100 is processing
+```
