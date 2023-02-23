@@ -29,3 +29,16 @@ $args = array('hello', 'world', '!');
 call_user_func_array('my_callback_function', $args);
 
 ```
+* **function_exists** - ```function_exists``` is a built-in function in PHP that checks whether a function with the given name has been defined and is available for use.
+
+Here's an example usage of ```call_user_func_array```:
+```
+if (function_exists('my_function')) {
+    // my_function is defined, call it
+    my_function();
+} else {
+    // my_function is not defined
+    echo "my_function is not defined";
+}
+
+```
