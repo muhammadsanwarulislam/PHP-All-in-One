@@ -102,10 +102,13 @@ Some predefined variables in PHP are "superglobals", which means that they are a
 
 ## Q200
 Difference between abstract class and interface
- * Interface can contain only abstract method
- * Interface can not contain constructor. it will return such kind of error "Fatal error: Interface function A::__construct() cannot contain body"
- * Interface all function must be public. if the method protected then it will return such kind of error "Fatal error: Access type for interface method  
- * Interface can support multiple inheritence
+
+|#    Abstract                                        | #           Interface                                                             |
+|-----------------------------------------------------|-----------------------------------------------------------------------------------|
+|Abstract class can contain method implementations    | Interface can only contain method declaration                                     |
+|Abstract class can contain properties                | Interface can only contain methods and constants                                  |
+|Abstract class can have private and protected methods| Interface can only have public methods                                            |
+|Class can only extend single class                   | Class can implements multiple interfaces                                          |
 
 ## Q201
 What is encapsulation
