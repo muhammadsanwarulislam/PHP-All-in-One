@@ -119,6 +119,20 @@ for ($i = 1; $i < 10; $i++) {
 ```
 Output: 1 3 5 7 9
 ```
+
+```
+<?php
+for ($i = 1; $i < 10; $i++) {
+    if ($i == 5) {
+        break;
+    }
+    echo $i . " ";
+}
+?>
+```
+```
+Output: 1 2 3 4
+```
 ## Q200
 Difference between abstract class and interface
 
