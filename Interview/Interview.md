@@ -105,6 +105,20 @@ Difference between break and continue
 |#                  Break                                      | #                          Continue                                                   |    
 |--------------------------------------------------------------|---------------------------------------------------------------------------------------|
 | The break statement terminates the whole iteration of a loop | While continue skips the current iteration.                                           |
+```
+<?php
+for ($i = 1; $i < 10; $i++) {
+    if ($i % 2 == 0) {
+        continue;
+    }
+    echo $i . " ";
+}
+?>
+```
+
+```
+Output: 1 3 5 7 9
+```
 ## Q200
 Difference between abstract class and interface
 
