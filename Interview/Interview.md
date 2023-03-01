@@ -55,6 +55,7 @@ PHP has eight primitive data types and those,
 
 ## Q6
 What is Variable Variables?
+
 A variable variable takes the value of a variable and treats that as the name of a variable.
 ```
 $Hello = "Welcome to my page";
@@ -74,6 +75,7 @@ What is require / require_once / include / include_once?
  
 ## Q8
 PHP string quotation differences.
+
 In PHP, both single and double quotation marks are used to enclose string values. However, there is a difference between the two in terms of how variables and escape sequences are interpreted:
 * Single quotation marks (' '): When a string is enclosed in single quotation marks, variables are not parsed and escape sequences are not interpreted. For example, the string 'Hello, $name!' will be printed as-is, including the literal '$name' instead of its value.
 * Double quotation marks (" "): When a string is enclosed in double quotation marks, variables are parsed and their values are inserted into the string. Escape sequences such as "\n" (newline) and "\t" (tab) are also interpreted. For example, the string "Hello, $name!" will print the value of the $name variable instead of the literal string '$name'.
@@ -100,7 +102,7 @@ Some predefined variables in PHP are "superglobals", which means that they are a
  * $_COOKIE
  
 ## Q10
-Difference between break and continue
+**Difference between break and continue**
 
 |#                  Break                                      | #                          Continue                                                   |    
 |--------------------------------------------------------------|---------------------------------------------------------------------------------------|
@@ -134,7 +136,7 @@ for ($i = 1; $i < 10; $i++) {
 Output: 1 2 3 4
 ```
 ## Q200
-Difference between abstract class and interface
+**Difference between abstract class and interface**
 
 |#    Abstract                                        | #           Interface                                                             |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------|
@@ -144,14 +146,14 @@ Difference between abstract class and interface
 |Class can only extend single class                   | Class can implements multiple interfaces                                          |
 
 ## Q201
-What is encapsulation
+**What is encapsulation**
  * hiding the data and implementation details within a class
  
  ## Q202
- What is the difference between encapsulation and abstraction
+ **What is the difference between encapsulation and abstraction**
   * **Eencapsulation** hiding internal state of information.
   * **Aabstraction** hide acctual implementation of the work.
   
   ## Q203
-  What is namespaces
+  **What is namespaces**
    * **Namespace** is one kind of virtual directory of the classes
