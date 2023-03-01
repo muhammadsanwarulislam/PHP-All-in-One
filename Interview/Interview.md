@@ -7,7 +7,7 @@
 
 ## Q1
 
-There is a list of HTTP status code:
+**There is a list of HTTP status code:**
   * **1xx informational response**
   * **2xx success(Most common)**
     * 200(success)
@@ -22,20 +22,20 @@ There is a list of HTTP status code:
 
 ## Q2
 
-Difference between put and patch Request
+**Difference between put and patch Request**
  * Put request can be use in order update an existing resource or put request can use create a resource which is call upsert.
  * Whenever we send put request we have to send whole the body resources in the request payload.
  * patch request basically just change few attributes existing resource
 
 ## Q3
 
-Difference between print and echo
+**Difference between print and echo**
  * **Echo** has no return value, echo can take multiple parameters and echo is marginally faster than print.
  * **Print** has return value of 1 so it ca be used in expressions.
  
 ## Q4
 
-What are the difference match expression vs switch case
+**What are the difference match expression vs switch case**
  * Match is an expression, while switch is statement.
  * Match uses strict comparison, while switch uses loose.
  * Match allows only single-line expression, while switch allows block of statements.
@@ -43,7 +43,7 @@ What are the difference match expression vs switch case
 
 ## Q5
 
-PHP has eight primitive data types and those,
+**PHP has eight primitive data types and those,**
  * booleans
  * integer
  * float
@@ -54,7 +54,7 @@ PHP has eight primitive data types and those,
  * null
 
 ## Q6
-What is Variable Variables?
+**What is Variable Variables?**
 
 A variable variable takes the value of a variable and treats that as the name of a variable.
 ```
@@ -68,13 +68,13 @@ Hello Welcome to my page
 ```
 
 ## Q7
-What is require / require_once / include / include_once?
+**What is require / require_once / include / include_once?**
  * include don't stop to the execution while file not found.
  * require stop the execution while file not found.
  * require_once or include_once same concept required or include file once count.
  
 ## Q8
-PHP string quotation differences.
+**PHP string quotation differences.**
 
 In PHP, both single and double quotation marks are used to enclose string values. However, there is a difference between the two in terms of how variables and escape sequences are interpreted:
 * Single quotation marks (' '): When a string is enclosed in single quotation marks, variables are not parsed and escape sequences are not interpreted. For example, the string 'Hello, $name!' will be printed as-is, including the literal '$name' instead of its value.
