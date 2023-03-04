@@ -56,4 +56,17 @@ function groupAnagrams($strs) {
     }
     return $res;
 }
-print_r(groupAnagrams(["eat","tea","tan","ate","nat","bat"]));//[["eat","tea","ate"],["tan","nat"],["bat"]]
+print_r(groupAnagrams(["eat","tea","tan","ate","nat","bat"]));//output: [["eat","tea","ate"],["tan","nat"],["bat"]]
+
+
+function reverseString($s) {
+    $j=count($s)-1;
+    for($i=0;$i<$j;$i++){
+        $temp=$s[$i];
+        $s[$i]=$s[$j];
+        $s[$j]=$temp;
+        $j--;
+    }; 
+    return $s;
+}
+print_r(reverseString(["h","e","l","l","o"])).PHP_EOL;
