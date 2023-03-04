@@ -1,0 +1,2 @@
+**Here are some of the most commonly used array functions in PHP:**
+* **array_map** — Applies the callback to the elements of the given arrays, array_map() returns an array containing the results of applying the callback to the corresponding value of array (and arrays if more arrays are provided) used as arguments for the callback.
