@@ -28,3 +28,13 @@ $newAnimals = ['cat','cow'];
 $strReplace = str_replace($animals, $newAnimals, $message);
 echo "The main message is: $message".PHP_EOL;
 print_r($strReplace).PHP_EOL;
+
+//trim()
+$str = "   Hello World!   ";
+$trimmed = trim($str);
+echo $trimmed.PHP_EOL; 
+
+//explode()
+$str = "apple,banana,orange";
+$fruits = explode(",", $str);
+print_r($fruits).PHP_EOL; 
