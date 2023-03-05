@@ -38,3 +38,15 @@ prettyPrintArray(array_chunk($input_array, 2, true));
 //array_fill()
 $a = array_fill(5, 6, 'banana');
 prettyPrintArray($a);
+
+//array_filter() - Example - 1
+$numbers = array(1,2,3,4,5,6,7,8,9);
+$filter_numbers = array_filter($numbers,function($number){return $number % 2 != 0;});
+prettyPrintArray($filter_numbers);
+
+//array_filter() - Example - 2
+function isOdd($number) {
+    return $number % 2 != 0;
+}
+$filter_numbers = array_filter($numbers,'isOdd');
+prettyPrintArray($filter_numbers);
