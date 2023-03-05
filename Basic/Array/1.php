@@ -34,3 +34,7 @@ echo $size.PHP_EOL;
 $input_array = array('a', 'b', 'c', 'd', 'e','f','g');
 prettyPrintArray(array_chunk($input_array, 3));
 prettyPrintArray(array_chunk($input_array, 2, true));
+
+//array_fill()
+$a = array_fill(5, 6, 'banana');
+prettyPrintArray($a);
