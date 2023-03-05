@@ -1,7 +1,7 @@
 | #  |                                                           Questions                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
 | Step: 1    | [HTTP status code](#q1)
-| Step: 2    | [Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)<br>[PHP string quotation differences](#q8)<br>[PHP Global Variables - Superglobals](#q9)<br>[Difference between break and continue](#q10)<br>
+| Step: 2    | [Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)<br>[PHP string quotation differences](#q8)<br>[PHP Global Variables - Superglobals](#q9)<br>[Difference between break and continue](#q10)<br>[PHP array_key_exists() vs isset()](#q11)
 | Step: 3    | [Difference between abstract class and interface](#q200)<br>[What is encapsulation](#q201)<br>[What is the difference between encapsulation and abstraction](#q202)<br>[What is namespaces](#q203)
 
 
@@ -135,6 +135,9 @@ for ($i = 1; $i < 10; $i++) {
 ```
 Output: 1 2 3 4
 ```
+## Q11
+**PHP array_key_exists() vs isset()**
+* PHP isset() does not return true for array keys that correspond to a null value, while array_key_exists() does.
 ## Q200
 **Difference between abstract class and interface**
 

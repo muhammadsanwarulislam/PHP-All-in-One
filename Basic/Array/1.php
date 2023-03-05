@@ -50,3 +50,18 @@ function isOdd($number) {
 }
 $filter_numbers = array_filter($numbers,'isOdd');
 prettyPrintArray($filter_numbers);
+
+//compact()
+$city  = "San Francisco";
+$state = "CA";
+$event = "SIGGRAPH";
+$location_vars = array("city", "state");
+$result = compact("event", $location_vars);
+prettyPrintArray($result);
+
+//array_key_exists()
+$search_array = array('first' => null, 'second' => 4);
+// returns false
+echo isset($search_array['first']);
+// returns true
+prettyPrintArray(array_key_exists('first', $search_array));
