@@ -2,7 +2,7 @@
 $str = 'PHP is a scripting language';
 
 // $position = strpos($str, 'isss');
-$position = stripos($str, 'php');
+$position = stripos($str, 'is');
 
 
 if($position !== false)
