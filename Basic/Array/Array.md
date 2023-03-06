@@ -17,3 +17,5 @@
 * **prev()** — Rewind the internal array pointer.
 * **reset()** — Set the internal pointer of an array to its first element.
 * **sizeof()** — is an alias of the count() function, which returns the number of elements in an array or the number of properties in an object.
+* **sort()** — Sort an array in ascending order.
+* **rsort()** — Sort an array in descending order.
