@@ -10,6 +10,7 @@
 * **array_push()** — Push one or more elements onto the end of array.
 * **array_pop()** — Pop the element off the end of array.
 * **array_shift()** — is a built-in function in PHP that removes the first element from an array and returns it.
+* **array_unshift()** — Prepend one or more elements to the beginning of an array
 * **current()** — Return the current element in an array.
 * **end()** — Set the internal pointer of an array to its last element.
 * **next()** — Advance the internal pointer of an array.
