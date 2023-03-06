@@ -9,6 +9,7 @@
 * **array_key_exists()** — Checks if the given key or index exists in the array.
 * **array_push()** — Push one or more elements onto the end of array.
 * **array_pop()** — Pop the element off the end of array.
+* **array_shift()** — is a built-in function in PHP that removes the first element from an array and returns it.
 * **current()** — Return the current element in an array.
 * **end()** — Set the internal pointer of an array to its last element.
 * **next()** — Advance the internal pointer of an array.

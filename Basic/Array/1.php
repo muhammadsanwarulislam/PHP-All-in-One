@@ -65,3 +65,9 @@ $search_array = array('first' => null, 'second' => 4);
 echo isset($search_array['first']);
 // returns true
 prettyPrintArray(array_key_exists('first', $search_array));
+
+//array_shift()
+$fruits = array("apple", "banana", "orange");
+$first_fruit = array_shift($fruits);
+echo $first_fruit; // Output: "apple"
+print_r($fruits); // Output: Array ( [0] => banana [1] => orange )
