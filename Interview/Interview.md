@@ -1,7 +1,7 @@
 | #  |                                                           Questions                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
 | Step: 1    | [HTTP status code](#q001)<br>[Difference between 401 vs 403](#q002)<br>
-| Step: 2    | [Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What's the difference between ```unset()``` and ```unlink()```](#q13)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)<br>[PHP string quotation differences](#q8)<br>[PHP Global Variables - Superglobals](#q9)<br>[Difference between break and continue](#q10)<br>[PHP array_key_exists() vs isset()](#q11)<br>[Difference between array_shift() vs array_pop()](#q12)
+| Step: 2    | [Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What's the difference between ```unset()``` and ```unlink()```](#q13)<br>[What is the difference between errors and exceptions](#q14)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)<br>[PHP string quotation differences](#q8)<br>[PHP Global Variables - Superglobals](#q9)<br>[Difference between break and continue](#q10)<br>[PHP array_key_exists() vs isset()](#q11)<br>[Difference between array_shift() vs array_pop()](#q12)
 | Step: 3    | [Difference between abstract class and interface](#q200)<br>[What is encapsulation](#q201)<br>[What is the difference between encapsulation and abstraction](#q202)<br>[What is namespaces](#q203)
 
 
@@ -41,6 +41,10 @@
 ## Q13
 **What's the difference between ```unset()``` and ```unlink()```**
 * ```uset()``` is used for destroying a variable(s), while ```unlink``` is used for deleting a file from the file system.
+
+## Q14
+**What is the difference between errors and exceptions**
+* An exception can be thrown and is intended to be caught using a try-catch block. A PHP error on the other hand is non recoverable and can stop the whole execution of the program.
 
 ## Q4
 
