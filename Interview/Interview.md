@@ -37,14 +37,6 @@
 **Difference between print and echo**
  * **Echo** has no return value, echo can take multiple parameters and echo is marginally faster than print.
  * **Print** has return value of 1 so it ca be used in expressions.
- 
-## Q13
-**What's the difference between ```unset()``` and ```unlink()```**
-* ```uset()``` is used for destroying a variable(s), while ```unlink``` is used for deleting a file from the file system.
-
-## Q14
-**What is the difference between errors and exceptions**
-* An exception can be thrown and is intended to be caught using a try-catch block. A PHP error on the other hand is non recoverable and can stop the whole execution of the program.
 
 ## Q4
 
@@ -158,6 +150,15 @@ Output: 1 2 3 4
 |#       array_shift()                               | #           array_pop()                                                           |
 |----------------------------------------------------|-----------------------------------------------------------------------------------|
 |```array_shift()``` removes the first element of an array and returns it.| while ```array_pop()``` removes the last element of an array and returns it.|
+
+## Q13
+**What's the difference between ```unset()``` and ```unlink()```**
+* ```uset()``` is used for destroying a variable(s), while ```unlink``` is used for deleting a file from the file system.
+
+## Q14
+**What is the difference between errors and exceptions**
+* An exception can be thrown and is intended to be caught using a try-catch block. A PHP error on the other hand is non recoverable and can stop the whole execution of the program.
+
 ## Q200
 **Difference between abstract class and interface**
 
