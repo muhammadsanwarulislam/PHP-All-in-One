@@ -26,10 +26,6 @@
 |--------------------------------------------------|---------------------------------|
 |```401 Unauthorized:``` This status code indicates that the client trying to access the resource needs to authenticate itself to get access. In other words, the server is saying that the request lacks valid authentication credentials for the target resource. This means that the user needs to provide a valid username and password or other valid authentication token to access the resource.|```403 Forbidden:``` This status code indicates that the client is authenticated, but does not have sufficient permissions to access the resource. In other words, the server is saying that the client has been authenticated, but is not allowed to access the resource. This might be because the client doesn't have the correct permissions or the resource is forbidden to all users.
 
-## Q15
- * Empty arrays and strings are cast to false.
- * Strings always evaluate to Boolean true unless they have a value that's considered "empty" by PHP.
- * Any integer or float that is non-zero is true, so the negative numbers are true
 ## Q2
 
 **Difference between put and patch Request**
@@ -164,6 +160,12 @@ Output: 1 2 3 4
 **What is the difference between errors and exceptions**
 * An exception can be thrown and is intended to be caught using a try-catch block. A PHP error on the other hand is non recoverable and can stop the whole execution of the program.
 
+## Q15
+ * Empty arrays and strings are cast to ```false```.
+ * Strings always evaluate to Boolean ```true``` unless they have a value that's considered "empty" by PHP.
+ * Any integer or float that is non-zero is ```true```, so the negative numbers are ```true```
+ 
+ 
 ## Q200
 **Difference between abstract class and interface**
 
