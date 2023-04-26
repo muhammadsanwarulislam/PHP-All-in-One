@@ -23,3 +23,21 @@
   $bar = "My name is $bar";
   echo $bar.PHP_EOL;
   echo $foo.PHP_EOL;
+
+  /**
+   * Static vaiables
+   */
+
+   function sum() {
+    static $a = 0;
+    echo $a.PHP_EOL;
+    $a++;
+   }
+   sum();
+   sum();
+   sum();
+
+   /**
+    * Global
+    */
+

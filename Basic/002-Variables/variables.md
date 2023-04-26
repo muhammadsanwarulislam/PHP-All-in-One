@@ -37,14 +37,14 @@ There are 12 predefined variables in php 8
 
 **User Define Variable**
 User Define variable are 3 types
-1.variable scope
-2.variable variables
-3.reference variable
+* variable scope
+* variable variables
+* reference variable
 
 **Variable Scope**
 variable scope are 3 types
-1.local scope
-2.global scope
-3.static variable
+* local scope
+* global scope
+* static variable
 
 
