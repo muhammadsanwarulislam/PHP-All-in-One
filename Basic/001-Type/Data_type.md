@@ -20,14 +20,4 @@
 |Empty array like ```[]``` will evaluted    | FALSE                |
 |Spical type ```null``` will evaluted       | FALSE                |
 
-**What will be the output**
-```
-$status = 'false';
 
-if($status)
-{
-    echo "success";
-}else{
-    echo "fail";
-}
-```
