@@ -1,4 +1,6 @@
-## Difference between do-while vs while ##
+## PHP Control Structure ##
+
+**Difference between do-while vs while**
 
 |   do-while                            |       while                                           |
 |---------------------------------------|-------------------------------------------------------|

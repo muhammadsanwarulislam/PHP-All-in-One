@@ -1,4 +1,4 @@
-## Constants ##
+## PHP Constants ##
 
 A **constant** is an identifier (name) for a simple value. As the name suggests, that value cannot change during the execution of the script (except for magic constants, which aren't actually constants). Constants are case-sensitive. By convention, constant identifiers are always uppercase.
 
