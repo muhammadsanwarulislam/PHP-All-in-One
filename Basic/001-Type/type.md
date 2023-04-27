@@ -1,13 +1,13 @@
 ## PHP data types ##
-* NULL
-* BOOL
-* INT
-* FLOAT
-* STRING
-* ARRAY
+* NULL : The null type is PHP's unit type, i.e. it has only one value: null. Undefined, and unset() variables will resolve to the value null.  
+* BOOL : The bool type only has two values, and is used to express a truth value. It can be either true or false.
+* INT : An int is a number of the set ℤ = {..., -2, -1, 0, 1, 2, ...}.
+* FLOAT : Floating point numbers (also known as "floats", "doubles", or "real numbers") can be specified using any of the following syntaxes:
+* STRING : A string is a series of characters, where a character is the same as a byte. This means that PHP only supports a 256-character set.
+* ARRAY : An array in PHP is actually an ordered map. A map is a type that associates values to keys.This type is optimized for several different uses; it can be treated as an array, list (vector), hash table (an implementation of a map), dictionary, collection, stack, queue, and probably more.
 * OBJECT
 * CALLABLE
-* RESOURCE
+* RESOURCE : A resource is a special variable, holding a reference to an external resource. Resources are created and used by special functions.
 
 ## Variable handling functions ##
 * **isset()** - Determine if a variable is declared and is different than null
@@ -21,7 +21,7 @@
 * **is_iterable** — Verify that the contents of a variable is an iterable value
 * **is_callable** — Verify that a value can be called as a function from the current scope.
 
-**Evaluations**
+**Converting to boolean**
 
 |# Type                                     |#     Result          |
 |-------------------------------------------|----------------------|
