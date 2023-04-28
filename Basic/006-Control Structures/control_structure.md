@@ -1,5 +1,15 @@
 ## PHP Control Structure ##
 
+**if**
+```if``` expression is evaluated to its boolean value. If expression evaluates to ```true```, PHP will execute statement and if it evaluates to ```false``` it'll ignore it.
+
+**else**
+The ```else``` statement is only executed if the ```if``` expression evaluated ```false```.
+**In case of nested if-else statements, an ```else``` is always associated with the nearest ```if```.**
+
+**elseif**
+The ```elseif``` statement is only executed if the preceding ```if``` expression and any preceding ```elseif``` expressions evaluated to ```false```, and the current ```elseif``` expression evaluated to ```true```.
+
 **Difference between do-while vs while**
 
 |   do-while                            |       while                                           |
