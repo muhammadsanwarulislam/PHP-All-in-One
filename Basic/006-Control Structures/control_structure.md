@@ -79,3 +79,8 @@ var_dump($return_value);
 * A ```match``` expression returns a value.
 * ```match``` arms do not fall-through to later cases the way ```switch``` statements do.
 * A ```match``` expression must be exhaustive.
+
+**declare**
+
+
+The ```declare``` construct is used to set execution directives for a block of code.
