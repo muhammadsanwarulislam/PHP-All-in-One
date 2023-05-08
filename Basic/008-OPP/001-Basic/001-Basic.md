@@ -23,3 +23,6 @@ class SimpleClass
 ?>
 ```
 **The pseudo-variable $this is available when a method is called from within an object context. $this is the value of the calling object.**
+
+**Readonly classes**
+As of PHP 8.2.0, a class can be marked with the readonly modifier. Marking a class as readonly will add the readonly modifier to every declared property, and prevent the creation of dynamic properties. Moreover, it is impossible to add support for them by using the AllowDynamicProperties attribute. Attempting to do so will trigger a compile-time error.
