@@ -4,7 +4,7 @@
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
 | Step: 1    | [HTTP status code](#q001)<br>[Difference between 401 vs 403](#q002)<br>
 | Step: 2    | [Some general rules for casting to Boolean are that:](#q15)<br>[Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What's the difference between ```unset()``` and ```unlink()```](#q13)<br>[What is the difference between errors and exceptions](#q14)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)<br>[PHP string quotation differences](#q8)<br>[PHP Global Variables - Superglobals](#q9)<br>[Difference between break and continue](#q10)<br>[PHP array_key_exists() vs isset()](#q11)<br>[Difference between array_shift() vs array_pop()](#q12)
-| Step: 3    | [Difference between abstract class and interface](#q200)<br>[What is encapsulation](#q201)<br>[What is the difference between encapsulation and abstraction](#q202)<br>[What is namespaces](#q203)
+| Step: 3    | [Difference between abstract class and interface](#q200)<br>[What is encapsulation](#q201)<br>[What is the difference between encapsulation and abstraction](#q202)<br>[What is namespaces](#q203)[What is the difference between  $this  and  self ?](#q204)
 
 
 ## Q001
@@ -190,3 +190,9 @@ Output: 1 2 3 4
   ## Q203
   **What is namespaces**
    * **Namespace** is one kind of virtual directory of the classes
+  
+  ## Q204
+  **What is the difference between  $this  and  self ?**
+  |#    $this                                                     |#  self                        |
+  |---------------------------------------------------------------|-------------------------------|
+  |Inside a class definition, $this refers to the current object.  | while  self  refers to the current class.|
