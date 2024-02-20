@@ -2,14 +2,14 @@
 
 // What is the output of the following?
 
-function 1dotEach($n) {
+function oneDotEach($n) {
 	if ($n > 0) {
-		1dotEach(--$n);
+		oneDotEach(--$n);
 		echo ".";
 	} else {
 		return $n;
 	}
 }
 
-1dotEach(4);
+oneDotEach(4);
 
