@@ -12,5 +12,5 @@ function removeElement(&$arr,$element) {
 }
 
 $arr = [0,1,2,2,3,0,4,2];
-$element = 2;
+$element = 3;
 print_r(removeElement($arr, $element));
