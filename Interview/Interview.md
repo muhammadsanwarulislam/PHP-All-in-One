@@ -213,3 +213,7 @@ Output: 1 2 3 4
 ## Q301
 **Service Container**
 The Laravel service container provides a flexible and powerful way to manage class dependencies and perform dependency injection, making your application more modular, testable, and maintainable. It's a fundamental component of the Laravel framework and is used extensively throughout the framework's architecture.
+
+## Q302
+**Facades**
+Facades provide a static interface to classes that are registered in the service container. Laravel comes with several built-in facades that allow you to access services such as the database, session, cache, and more. Facades provide a clean and expressive way to interact with these services without needing to manually resolve them from the container
