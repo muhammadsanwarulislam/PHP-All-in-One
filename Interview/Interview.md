@@ -210,6 +210,6 @@ Output: 1 2 3 4
 * **Middleware Termination** After the controller has returned a response, the middleware stack continues execution in reverse order, allowing each middleware to perform post-processing tasks.
 * **Termination** The HTTP kernel sends the generated response back to the client, completing the request-response cycle. If configured, Laravel may also send events or log information related to the request lifecycle.
 
-## Q3001
+## Q301
 **Service Container**
 The Laravel service container provides a flexible and powerful way to manage class dependencies and perform dependency injection, making your application more modular, testable, and maintainable. It's a fundamental component of the Laravel framework and is used extensively throughout the framework's architecture.
