@@ -197,3 +197,16 @@ Output: 1 2 3 4
   |#    $this                                                     |#  self                        |
   |---------------------------------------------------------------|-------------------------------|
   |Inside a class definition, $this refers to the current object.  | while  self  refers to the current class.|
+## Q300
+**Request Lifecycle**
+* **Entry Point** The request enters the application through the public/index.php file, which serves as the entry point for all requests. Here, Laravel's bootstrap process begins.
+* **Bootstrapping** The bootstrap/app.php file is loaded, which sets up the Laravel application, initializes the service container, and registers important bindings.
+* **Kernel Handling** Laravel's HTTP kernel (app/Http/Kernel.php) receives the request. The kernel acts as a central entry point and manages HTTP requests coming into the application. It delegates the request to the appropriate middleware stack based on the request type (HTTP or Console).
+* **Middleware Processing** Middleware are layers of logic that sit between the request and the application's core logic. Each middleware can intercept the request, perform tasks, and optionally terminate the request or pass it to the next middleware in the stack. Middleware can handle tasks such as authentication, session management, logging, etc.
+* **Routing** After passing through middleware, the request reaches the router (Illuminate\Routing\Router), which determines which controller and method should handle the request based on the URL and HTTP verb. The router matches the incoming request to the routes defined in the routes/web.php or routes/api.php files.
+* **Dispatching** Once the router determines the appropriate route, it dispatches the request to the corresponding controller or closure.
+* **Controller Handling** The controller receives the request and processes it by executing the specified method. Controllers are responsible for handling the request logic, interacting with models, and returning responses.
+* **Response** After the controller method has executed, it typically returns a response. The response may be generated directly within the controller or may be returned as a view, JSON, file download, redirect, etc.
+* **Middleware Termination** After the controller has returned a response, the middleware stack continues execution in reverse order, allowing each middleware to perform post-processing tasks.
+* **Termination** The HTTP kernel sends the generated response back to the client, completing the request-response cycle. If configured, Laravel may also send events or log information related to the request lifecycle.
+
