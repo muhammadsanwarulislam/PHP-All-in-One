@@ -2,9 +2,10 @@
 
 | #  |                                                           Questions                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
-| Step: 1    | [HTTP status code](#q001)<br>[Difference between 401 vs 403](#q002)<br>
-| Step: 2    | [Some general rules for casting to Boolean are that:](#q15)<br>[Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What's the difference between ```unset()``` and ```unlink()```](#q13)<br>[What is the difference between errors and exceptions](#q14)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)<br>[PHP string quotation differences](#q8)<br>[PHP Global Variables - Superglobals](#q9)<br>[Difference between break and continue](#q10)<br>[PHP array_key_exists() vs isset()](#q11)<br>[Difference between array_shift() vs array_pop()](#q12)
-| Step: 3    | [Difference between abstract class and interface](#q200)<br>[What is encapsulation](#q201)<br>[What is the difference between encapsulation and abstraction](#q202)<br>[What is namespaces](#q203)<br>[What is the difference between  $this  and  self ?](#q204)
+| Basic    | [HTTP status code](#q001)<br>[Difference between 401 vs 403](#q002)<br>
+| PHP    | [Some general rules for casting to Boolean are that:](#q15)<br>[Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What's the difference between ```unset()``` and ```unlink()```](#q13)<br>[What is the difference between errors and exceptions](#q14)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)<br>[PHP string quotation differences](#q8)<br>[PHP Global Variables - Superglobals](#q9)<br>[Difference between break and continue](#q10)<br>[PHP array_key_exists() vs isset()](#q11)<br>[Difference between array_shift() vs array_pop()](#q12)
+| OOP(PHP)    | [Difference between abstract class and interface](#q200)<br>[What is encapsulation](#q201)<br>[What is the difference between encapsulation and abstraction](#q202)<br>[What is namespaces](#q203)<br>[What is the difference between  $this  and  self ?](#q204)
+| Laravel    | [Request Lifecycle](#q300)<br>[Service Container](#q301)<br>[Service Providers](#q302)<br>[Facades](#q303)<br>[Facades vs. Dependency Injection](#q304)
 
 
 ## Q001
@@ -196,3 +197,23 @@ Output: 1 2 3 4
   |#    $this                                                     |#  self                        |
   |---------------------------------------------------------------|-------------------------------|
   |Inside a class definition, $this refers to the current object.  | while  self  refers to the current class.|
+## Q300
+**Request Lifecycle**
+* **Entry Point** The request enters the application through the public/index.php file, which serves as the entry point for all requests. Here, Laravel's bootstrap process begins.
+* **Bootstrapping** The bootstrap/app.php file is loaded, which sets up the Laravel application, initializes the service container, and registers important bindings.
+* **Kernel Handling** Laravel's HTTP kernel (app/Http/Kernel.php) receives the request. The kernel acts as a central entry point and manages HTTP requests coming into the application. It delegates the request to the appropriate middleware stack based on the request type (HTTP or Console).
+* **Middleware Processing** Middleware are layers of logic that sit between the request and the application's core logic. Each middleware can intercept the request, perform tasks, and optionally terminate the request or pass it to the next middleware in the stack. Middleware can handle tasks such as authentication, session management, logging, etc.
+* **Routing** After passing through middleware, the request reaches the router (Illuminate\Routing\Router), which determines which controller and method should handle the request based on the URL and HTTP verb. The router matches the incoming request to the routes defined in the routes/web.php or routes/api.php files.
+* **Dispatching** Once the router determines the appropriate route, it dispatches the request to the corresponding controller or closure.
+* **Controller Handling** The controller receives the request and processes it by executing the specified method. Controllers are responsible for handling the request logic, interacting with models, and returning responses.
+* **Response** After the controller method has executed, it typically returns a response. The response may be generated directly within the controller or may be returned as a view, JSON, file download, redirect, etc.
+* **Middleware Termination** After the controller has returned a response, the middleware stack continues execution in reverse order, allowing each middleware to perform post-processing tasks.
+* **Termination** The HTTP kernel sends the generated response back to the client, completing the request-response cycle. If configured, Laravel may also send events or log information related to the request lifecycle.
+
+## Q301
+**Service Container**
+The Laravel service container provides a flexible and powerful way to manage class dependencies and perform dependency injection, making your application more modular, testable, and maintainable. It's a fundamental component of the Laravel framework and is used extensively throughout the framework's architecture.
+
+## Q303
+**Facades**
+Facades provide a static interface to classes that are registered in the service container. Laravel comes with several built-in facades that allow you to access services such as the database, session, cache, and more. Facades provide a clean and expressive way to interact with these services without needing to manually resolve them from the container
