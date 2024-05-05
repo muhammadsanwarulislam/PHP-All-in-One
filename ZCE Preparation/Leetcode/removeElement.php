@@ -1,16 +1,20 @@
 <?php 
+//  Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val. 
+ 
 
-function removeElement(&$arr,$element) {
-    $count = 0;
-    foreach ($arr as $k => $v) {
-        if($arr[$k] != $element){
-            $arr[$count] =$arr[$k];
-            $count++;
+ function removeElement($nums, $val){
+    $result = [];
+    foreach($nums as $num){
+        if($num != $val){
+            // 1st way
+            $result[] = $num;
+            //second way
+            // array_push($result,$num);
         }
     }
-    return $arr;
-}
+    return $result;
+ }
 
-$arr = [0,1,2,2,3,0,4,2];
-$element = 3;
-print_r(removeElement($arr, $element));
+ $nums = [3,2,2,3,2];
+ $val  = 3;
+ print_r(removeElement($nums,$val));
