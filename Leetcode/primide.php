@@ -6,7 +6,7 @@ function printPyramid($n) {
             echo " ";
         }
         // Print stars
-        for ($k = 1; $k <= (3 * $i - 1); $k++) {
+        for ($k = 1; $k <= (2 * $i - 1); $k++) {
             echo "*";
         }
         // Move to the next line
