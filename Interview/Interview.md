@@ -3,6 +3,7 @@
 | #  |                                                           Questions                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
 | Basic    | [HTTP status code](#q001)<br>[Difference between 401 vs 403](#q002)<br>[Token-based Authentication vs Session/Cookies-based Authentication](#q003)<br>
+[Comparison of Session Storage, Cookies, and Local Storage](#q004)<br>
 | PHP    | [Some general rules for casting to Boolean are that:](#q15)<br>[Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What's the difference between ```unset()``` and ```unlink()```](#q13)<br>[What is the difference between errors and exceptions](#q14)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)<br>[PHP string quotation differences](#q8)<br>[PHP Global Variables - Superglobals](#q9)<br>[Difference between break and continue](#q10)<br>[PHP array_key_exists() vs isset()](#q11)<br>[Difference between array_shift() vs array_pop()](#q12)
 | OOP(PHP)    | [Difference between abstract class and interface](#q200)<br>[What is encapsulation](#q201)<br>[What is the difference between encapsulation and abstraction](#q202)<br>[What is namespaces](#q203)<br>[What is the difference between  $this  and  self ?](#q204)
 | Laravel    | [Request Lifecycle](#q300)<br>[Service Container](#q301)<br>[Service Providers](#q302)<br>[Facades](#q303)<br>[Facades vs. Dependency Injection](#q304)
@@ -48,6 +49,71 @@
 ### Summary
 - **Token-based authentication** is ideal for large, scalable, and stateless applications, particularly those using RESTful APIs and microservices.
 - **Session/cookies-based authentication** is simpler to implement and manage for traditional web applications with server-side rendering but may face challenges in scaling horizontally without additional infrastructure for session management.
+
+## Q004
+## Comparison of Session Storage, Cookies, and Local Storage
+
+### Overview
+This document provides a comparison between session storage, cookies, and local storage in web applications, highlighting their key differences and typical use cases.
+
+### Comparison Table
+
+| **Feature**          | **Session Storage**                              | **Cookies**                                        | **Local Storage**                                  |
+|----------------------|--------------------------------------------------|----------------------------------------------------|---------------------------------------------------|
+| **Storage Location** | Server-side (session ID stored in client-side cookie) | Client-side                                        | Client-side                                       |
+| **Capacity**         | Limited by server resources                      | Typically up to 4KB per cookie                     | Up to 5-10MB, depending on the browser            |
+| **Lifetime**         | Expires when the browser is closed or after a set duration | Can expire at a specific date or after a session ends | Persistent until explicitly deleted               |
+| **Accessibility**    | Accessible only on the server-side               | Accessible by both client and server               | Accessible by client-side JavaScript              |
+| **Security**         | More secure, as data is stored on the server     | Can be vulnerable to theft if not secured properly | Vulnerable to XSS attacks; not suitable for sensitive data |
+| **Use Cases**        | Storing sensitive or large data, user sessions   | Storing small amounts of data for tracking and session management | Storing large amounts of non-sensitive data for web applications |
+| **Data Format**      | Server-managed objects                           | String data (can be serialized/deserialized)       | String data (can be serialized/deserialized)      |
+| **Transmission**     | No direct transmission; identified by session ID | Sent with every HTTP request                       | No automatic transmission with HTTP requests      |
+| **Ease of Use**      | Requires server-side management                  | Built-in support, easy to use with HTTP headers    | Easy to use with JavaScript API                   |
+| **Data Persistence** | Temporary, unless using persistent sessions      | Can be made persistent with expiration dates       | Persistent until cleared by the user or program   |
+
+### Detailed Descriptions
+
+#### Session Storage
+- **Storage Location**: Stored on the server, with a session ID sent to the client via a cookie.
+- **Capacity**: Limited by server resources.
+- **Lifetime**: Usually expires when the browser is closed or after a predefined period of inactivity.
+- **Accessibility**: Only accessible on the server-side.
+- **Security**: More secure for storing sensitive data since the actual data is not stored on the client-side.
+- **Use Cases**: Ideal for managing user sessions and storing sensitive data that shouldn't be exposed to the client.
+- **Data Format**: Can store complex objects managed by the server.
+- **Transmission**: Identified by a session ID cookie; no direct data transmission.
+- **Ease of Use**: Requires server-side management, often built into web frameworks.
+- **Data Persistence**: Temporary, but can be made persistent with session persistence techniques.
+
+#### Cookies
+- **Storage Location**: Stored on the client-side.
+- **Capacity**: Typically up to 4KB per cookie.
+- **Lifetime**: Can be set to expire at a specific date or after a session ends.
+- **Accessibility**: Accessible by both the client (JavaScript) and the server.
+- **Security**: Vulnerable to theft and attacks if not secured properly (e.g., HTTPOnly and Secure flags).
+- **Use Cases**: Used for session management, tracking user preferences, and maintaining state information.
+- **Data Format**: Stores string data; complex data needs to be serialized (e.g., JSON).
+- **Transmission**: Sent with every HTTP request to the server.
+- **Ease of Use**: Built-in support in browsers, managed via HTTP headers.
+- **Data Persistence**: Can be persistent or temporary based on expiration settings.
+
+#### Local Storage
+- **Storage Location**: Stored on the client-side.
+- **Capacity**: Up to 5-10MB, depending on the browser.
+- **Lifetime**: Persistent until explicitly deleted by the user or through code.
+- **Accessibility**: Accessible by client-side JavaScript.
+- **Security**: Vulnerable to XSS attacks; not suitable for sensitive data.
+- **Use Cases**: Used for storing large amounts of non-sensitive data, maintaining application state, and offline capabilities.
+- **Data Format**: Stores string data; complex data needs to be serialized (e.g., JSON).
+- **Transmission**: Not automatically sent with HTTP requests.
+- **Ease of Use**: Easy to use with a simple JavaScript API.
+- **Data Persistence**: Persistent until manually cleared.
+
+### Summary
+- **Session Storage** is best for sensitive or large data that should remain secure and be managed server-side.
+- **Cookies** are useful for small pieces of data that need to be sent to the server with every request, such as authentication tokens.
+- **Local Storage** is ideal for storing larger amounts of non-sensitive data that should persist across sessions and be accessible client-side.
+
 
 
 ## Q2
