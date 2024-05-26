@@ -2,8 +2,7 @@
 
 | #  |                                                           Questions                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
-| Basic    | [HTTP status code](#q001)<br>[Difference between 401 vs 403](#q002)<br>[Token-based Authentication vs Session/Cookies-based Authentication](#q003)<br>
-[Comparison of Session Storage, Cookies, and Local Storage](#q004)<br>
+| Basic    | [HTTP status code](#q001)<br>[Difference between 401 vs 403](#q002)<br>[Token-based Authentication vs Session/Cookies-based Authentication](#q003)<br>[Comparison of Session Storage, Cookies, and Local Storage](#q004)<br>
 | PHP    | [Some general rules for casting to Boolean are that:](#q15)<br>[Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What's the difference between ```unset()``` and ```unlink()```](#q13)<br>[What is the difference between errors and exceptions](#q14)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)<br>[PHP string quotation differences](#q8)<br>[PHP Global Variables - Superglobals](#q9)<br>[Difference between break and continue](#q10)<br>[PHP array_key_exists() vs isset()](#q11)<br>[Difference between array_shift() vs array_pop()](#q12)
 | OOP(PHP)    | [Difference between abstract class and interface](#q200)<br>[What is encapsulation](#q201)<br>[What is the difference between encapsulation and abstraction](#q202)<br>[What is namespaces](#q203)<br>[What is the difference between  $this  and  self ?](#q204)
 | Laravel    | [Request Lifecycle](#q300)<br>[Service Container](#q301)<br>[Service Providers](#q302)<br>[Facades](#q303)<br>[Facades vs. Dependency Injection](#q304)
