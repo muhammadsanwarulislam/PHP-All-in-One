@@ -2,7 +2,7 @@
 
 | #  |                                                           Questions                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
-| Basic    | [HTTP status code](#q001)<br>[Difference between 401 vs 403](#q002)<br>
+| Basic    | [HTTP status code](#q001)<br>[Difference between 401 vs 403](#q002)<br>[Token-based Authentication vs Session/Cookies-based Authentication](#q003)<br>
 | PHP    | [Some general rules for casting to Boolean are that:](#q15)<br>[Difference between put and patch Request](#q2)<br>[Difference between print and echo](#q3)<br>[What's the difference between ```unset()``` and ```unlink()```](#q13)<br>[What is the difference between errors and exceptions](#q14)<br>[What are the difference match expression vs switch case](#q4)<br>[PHP data type](#q5)<br>[What is Variable Variables](#q6)[What is require / require_once / include / include_once](#q7)<br>[PHP string quotation differences](#q8)<br>[PHP Global Variables - Superglobals](#q9)<br>[Difference between break and continue](#q10)<br>[PHP array_key_exists() vs isset()](#q11)<br>[Difference between array_shift() vs array_pop()](#q12)
 | OOP(PHP)    | [Difference between abstract class and interface](#q200)<br>[What is encapsulation](#q201)<br>[What is the difference between encapsulation and abstraction](#q202)<br>[What is namespaces](#q203)<br>[What is the difference between  $this  and  self ?](#q204)
 | Laravel    | [Request Lifecycle](#q300)<br>[Service Container](#q301)<br>[Service Providers](#q302)<br>[Facades](#q303)<br>[Facades vs. Dependency Injection](#q304)
@@ -28,6 +28,27 @@
 |#  401                                            |# 403                            |
 |--------------------------------------------------|---------------------------------|
 |```401 Unauthorized:``` This status code indicates that the client trying to access the resource needs to authenticate itself to get access. In other words, the server is saying that the request lacks valid authentication credentials for the target resource. This means that the user needs to provide a valid username and password or other valid authentication token to access the resource.|```403 Forbidden:``` This status code indicates that the client is authenticated, but does not have sufficient permissions to access the resource. In other words, the server is saying that the client has been authenticated, but is not allowed to access the resource. This might be because the client doesn't have the correct permissions or the resource is forbidden to all users.
+
+## Q003
+## Authentication Methods Comparison
+
+| **Factor**          | **Token-based Authentication**                                 | **Session/Cookies-based Authentication**                     |
+|---------------------|----------------------------------------------------------------|-------------------------------------------------------------|
+| **Scalability**     | Highly scalable; no need for server-side session storage.      | Less scalable; requires server-side session storage.        |
+| **Statelessness**   | Stateless; each request is self-contained with token info.     | Stateful; server maintains session state.                   |
+| **Storage**         | Tokens are stored client-side (e.g., local storage, cookies).  | Sessions are stored server-side; session ID in a cookie.    |
+| **Security**        | Requires careful handling of tokens (e.g., XSS, CSRF).         | Sessions can be vulnerable to hijacking, but simpler to protect. |
+| **Complexity**      | More complex; needs token generation, validation, expiration.  | Simpler; session management is often built into frameworks. |
+| **Performance**     | Can reduce server load by offloading state to the client.      | May increase server load due to session state management.   |
+| **Horizontal Scaling** | Easier to scale across multiple servers.                   | Requires session synchronization or sticky sessions.        |
+| **API Support**     | Well-suited for RESTful APIs and microservices architectures.  | Traditional for web apps with server-side rendering.        |
+| **Persistence**     | Tokens can be persistent across sessions (with refresh tokens).| Sessions typically expire with user inactivity or logout.   |
+| **Implementation**  | Commonly uses JWT; requires setup for token handling.          | Widely supported by web frameworks with minimal setup.      |
+
+### Summary
+- **Token-based authentication** is ideal for large, scalable, and stateless applications, particularly those using RESTful APIs and microservices.
+- **Session/cookies-based authentication** is simpler to implement and manage for traditional web applications with server-side rendering but may face challenges in scaling horizontally without additional infrastructure for session management.
+
 
 ## Q2
 
