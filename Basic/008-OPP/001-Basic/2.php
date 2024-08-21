@@ -12,4 +12,4 @@ $object = new ExampleOfReadOnly('muhammad');
 echo $object->name;
 
 // Illegal reassignment. It does not matter that the assigned value is the same.
-$object->name = 'sanwarul';
+// $object->name = 'sanwarul';

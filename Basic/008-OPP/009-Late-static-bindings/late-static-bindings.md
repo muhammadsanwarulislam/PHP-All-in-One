@@ -1,7 +1,3 @@
-# Late Static Bindings in PHP
-
-This README provides an overview and explanation of late static bindings in PHP.
-
 ## Introduction
 
 Late static binding is a feature in PHP that allows a class to reference its called class in a context of static inheritance. It enables a subclass to reference its own class dynamically, even when methods are inherited from a parent class.
